@@ -1,0 +1,63 @@
+$primary-color:#cecece;
+$navBarBackGroundColor:#333;
+/**/
+html{
+    box-sizing:  border-box;
+}
+*, *::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+@import 'navBar.scss';
+@import 'otroselementos.scss';
+
+.blue{
+    background-color: blue;
+}
+
+/*---------------------------------------------Ejercicio 1 */
+.ex1 .parent {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.ex1 .box{
+        width: 60%;
+}
+.ex1 .container{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 550px) {
+    .ex1 .box{
+        width: 95%;
+    }
+}
+/*---------------------------------------------Ejercicio 2 */
+.ex2 .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ex2 .box {
+    flex: 1 1 150px; /*  Stretching: */
+    flex: 0 1 150px; /*  No stretching: */
+    margin: 5px;
+}
+/*---------------------------------------------Ejercicio 3 */
+/*---------------------------------------------Ejercicio 4 */
+/*---------------------------------------------Ejercicio 5 */
+/*---------------------------------------------Ejercicio 6*/
+/*---------------------------------------------Ejercicio 7 */
+/*---------------------------------------------Ejercicio 8 */
+/*---------------------------------------------Ejercicio 9 */
+/*---------------------------------------------Ejercicio 10 */

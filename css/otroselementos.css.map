@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,+CAA+C;AAG/C,AAAA,KAAK,CAAC;EACF,6CAA6C;EAC7C,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC,CAAC,kBAAe;EACvC,UAAU,EAAE,IAAI;CAEjB;;AAED,wCAAwC;AACxC,AAAA,KAAK,AAAA,MAAM,CAAC;EACV,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC,CAAC,kBAAe;CACzC;;AAED,gDAAgD;AAChD,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,QAAQ;CAClB",
+    "sources": [
+        "../sass/otroselementos.scss"
+    ],
+    "names": [],
+    "file": "otroselementos.css"
+}

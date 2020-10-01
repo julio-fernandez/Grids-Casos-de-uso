@@ -1,0 +1,214 @@
+/**/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+/**------------------------navbar--------------------------*/
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border: solid 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_titulo {
+  font-size: 18px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav_titulo:hover {
+  background-color: #111;
+}
+
+.nav-li {
+  float: left;
+}
+
+/**------------------------Select nvbar--------------------------*/
+.custom-select {
+  background-color: #333;
+  padding-right: 15px;
+}
+
+.select-css {
+  display: block;
+  font-size: 12px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.3;
+  padding: .3em 1.4em .3em .8em;
+  width: 220px;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #00a2ff;
+  -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.03);
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #00d9ff;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), -webkit-gradient(linear, left top, left bottom, from(#00ffdd), to(#f7f7f7c7));
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), linear-gradient(to bottom, #00ffdd 0%, #f7f7f7c7 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+}
+
+.select-css::-ms-expand {
+  display: none;
+}
+
+.select-css:hover {
+  border-color: white;
+}
+
+.select-css:focus {
+  border-color: #aaaaaa;
+  -webkit-box-shadow: 0 0 1px 3px rgba(59, 252, 252, 0.7);
+          box-shadow: 0 0 1px 3px rgba(59, 252, 252, 0.7);
+  box-shadow: 59 153 252 1px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+.select-css option {
+  font-weight: normal;
+}
+
+/**------------------------Media quieys--------------------------*/
+@media only screen and (max-width: 550px) {
+  .navbar {
+    display: block;
+  }
+  .nav-li {
+    width: 100%;
+  }
+  .select-css {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+  .custom-select {
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+}
+
+/*-----------------------CARD----------------*/
+.card {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/*---------------------------------------------Ejercicio 1 */
+.ex1 .parent {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.ex1 .box {
+  width: 60%;
+}
+
+.ex1 .container {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  .ex1 .box {
+    width: 95%;
+  }
+}
+
+/*---------------------------------------------Ejercicio 2 */
+.ex2 .parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ex2 .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  /*  Stretching: */
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 150px;
+          flex: 0 1 150px;
+  /*  No stretching: */
+  margin: 5px;
+}
+
+/*---------------------------------------------Ejercicio 3 */
+/*---------------------------------------------Ejercicio 4 */
+/*---------------------------------------------Ejercicio 5 */
+/*---------------------------------------------Ejercicio 6*/
+/*---------------------------------------------Ejercicio 7 */
+/*---------------------------------------------Ejercicio 8 */
+/*---------------------------------------------Ejercicio 9 */
+/*---------------------------------------------Ejercicio 10 */
+/*# sourceMappingURL=ejericios.css.map */
