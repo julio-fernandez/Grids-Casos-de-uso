@@ -131,4 +131,30 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 5px;
   }
 }
+
+.contenedor {
+  background-color: gray;
+  height: calc(100vh - 37px);
+}
+
+.grid-content-index {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+  -ms-grid-columns: (1fr)[4];
+      grid-template: repeat(4, 1fr)/repeat(4, 1fr);
+}
+
+.box-a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box-content {
+  background: red;
+  width: 100%;
+  height: 100px;
+  border: solid 1px;
+}
 /*# sourceMappingURL=index.css.map */
