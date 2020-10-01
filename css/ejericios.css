@@ -173,6 +173,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: coral;
 }
 
+.pink {
+  background-color: pink;
+}
+
 /*---------------------------------------------General*/
 /*---------------------------------------------Ejercicio 1 */
 .ex1 .parent {
@@ -287,6 +291,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---------------------------------------------Ejercicio 5 */
+.ex5 {
+  color: white;
+  text-align: center;
+}
+
 .ex5 .parent {
   display: -ms-grid;
   display: grid;
@@ -300,24 +309,52 @@ h1, h2, h3, h4, h5, h6 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
+  color: black;
 }
 
 .ex5 .left-side {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .ex5 main {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .ex5 .right-side {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .ex5 footer {
@@ -327,8 +364,142 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---------------------------------------------Ejercicio 6*/
+.ex6 {
+  color: white;
+}
+
+.ex6 .parent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.ex6 .span-12 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+}
+
+.ex6 .span-6 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / span 6;
+}
+
+.ex6 .span-4 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-column: 4 / span 4;
+}
+
+.ex6 .span-2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / span 2;
+  color: green;
+}
+
+.ex6 .section {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+/* centering text */
 /*---------------------------------------------Ejercicio 7 */
+.ex7 {
+  margin: 20px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  min-height: 400px;
+}
+
+.ex7 .parent {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.ex7 .box {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 /*---------------------------------------------Ejercicio 8 */
+.ex8 {
+  text-align: center;
+  overflow: auto;
+}
+
+.ex8 .parent {
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.ex8 .visual {
+  height: 100px;
+  width: 100%;
+}
+
+.ex8 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ex8 h3 {
+  margin: 0;
+}
+
 /*---------------------------------------------Ejercicio 9 */
+.ex9 .parent {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.ex9 .card {
+  width: clamp(23ch, 50%, 46ch);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.ex9 .visual {
+  height: 125px;
+  width: 100%;
+}
+
 /*---------------------------------------------Ejercicio 10 */
 /*# sourceMappingURL=ejericios.css.map */
