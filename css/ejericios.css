@@ -478,6 +478,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---------------------------------------------Ejercicio 9 */
+.ex9 {
+  text-align: center;
+}
+
 .ex9 .parent {
   display: -ms-grid;
   display: grid;
@@ -502,4 +506,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---------------------------------------------Ejercicio 10 */
+.ex10 {
+  color: white;
+}
+
+.ex10 .parent {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.ex10 .visual {
+  aspect-ratio: 16 / 9;
+}
+
+.ex10 .card {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.ex10 .comentario {
+  text-align: center;
+  color: black;
+}
+
+/*---------------------------------------------Conclusion */
+.conclusion .box {
+  background-color: red;
+  color: blueviolet;
+  border-radius: 15px;
+  text-align: justify;
+}
 /*# sourceMappingURL=ejericios.css.map */
