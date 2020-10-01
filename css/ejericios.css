@@ -14,6 +14,7 @@ body {
   padding: 0;
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
+  background-color: #cecece;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -156,6 +157,23 @@ h1, h2, h3, h4, h5, h6 {
   background-color: blue;
 }
 
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.coral {
+  background-color: coral;
+}
+
+/*---------------------------------------------General*/
 /*---------------------------------------------Ejercicio 1 */
 .ex1 .parent {
   display: -ms-grid;
@@ -180,6 +198,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---------------------------------------------Ejercicio 2 */
+.ex2 {
+  height: 100vh;
+  text-align: center;
+}
+
 .ex2 .parent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,11 +224,108 @@ h1, h2, h3, h4, h5, h6 {
           flex: 0 1 150px;
   /*  No stretching: */
   margin: 5px;
+  height: 180px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
 }
 
 /*---------------------------------------------Ejercicio 3 */
+.ex3 {
+  text-align: center;
+}
+
+.ex3 .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 50px 5px;
+}
+
+.ex3 .parent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(150px, 25%) 1fr;
+      grid-template-columns: minmax(150px, 25%) 1fr;
+  border-radius: 15px;
+  padding: 15px;
+}
+
 /*---------------------------------------------Ejercicio 4 */
+.ex4 .parent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  color: white;
+}
+
+.ex4 .section {
+  padding: 40px 10px;
+}
+
+.ex4 h1 {
+  padding: 0px;
+  text-align: center;
+}
+
+.ex4 footer {
+  text-align: center;
+}
+
 /*---------------------------------------------Ejercicio 5 */
+.ex5 .parent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.ex5 header {
+  padding: 2rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
+.ex5 .left-side {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.ex5 main {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.ex5 .right-side {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+.ex5 footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
 /*---------------------------------------------Ejercicio 6*/
 /*---------------------------------------------Ejercicio 7 */
 /*---------------------------------------------Ejercicio 8 */

@@ -1,5 +1,11 @@
 $primary-color:#cecece;
 $navBarBackGroundColor:#333;
+
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
 /**/
 html{
     box-sizing:  border-box;
@@ -12,6 +18,7 @@ body{
     padding: 0;
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
+    background-color: $primary-color;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
@@ -22,19 +29,34 @@ h1, h2, h3, h4, h5, h6 {
 .blue{
     background-color: blue;
 }
+.green{
+    background-color: green;
+}
+.purple{
+    background-color: purple;
+}
+.yellow{
+    background-color: yellow;
+}
+.coral{
+    background-color: coral;
+}
+/*---------------------------------------------General*/
 
 /*---------------------------------------------Ejercicio 1 */
-.ex1 .parent {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-}
-.ex1 .box{
+.ex1{
+    .parent {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+    .box{
         width: 60%;
-}
-.ex1 .container{
-    background-color: whitesmoke;
-    border-radius: 10px;
+    }
+    .container{
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
 }
 @media only screen and (max-width: 550px) {
     .ex1 .box{
@@ -42,20 +64,84 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 /*---------------------------------------------Ejercicio 2 */
-.ex2 .parent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.ex2 .box {
-    flex: 1 1 150px; /*  Stretching: */
-    flex: 0 1 150px; /*  No stretching: */
-    margin: 5px;
+.ex2{
+    height: 100vh;
+    text-align: center;
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box {
+        flex: 1 1 150px; /*  Stretching: */
+        flex: 0 1 150px; /*  No stretching: */
+        margin: 5px;
+        height: 180px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
 }
 /*---------------------------------------------Ejercicio 3 */
+.ex3{
+    text-align: center;
+    .section{
+        @include flexCenter();
+        padding: 50px 5px;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: minmax(150px, 25%) 1fr;
+        border-radius: 15px ;
+        padding: 15px;
+        //height: 800px;
+    }
+}
 /*---------------------------------------------Ejercicio 4 */
+.ex4{
+    .parent {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        color: white;
+    }
+    .section{
+        padding: 40px 10px;
+    }
+    h1{
+        padding: 0px;
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+}
 /*---------------------------------------------Ejercicio 5 */
+.ex5 {
+    .parent {
+        display: grid;
+        grid-template: auto 1fr auto / auto 1fr auto;
+      }
+      header {
+        padding: 2rem;
+        grid-column: 1 / 4;
+      }
+      .left-side {
+        grid-column: 1 / 2;
+      }
+      main {
+        grid-column: 2 / 3;
+      }
+      .right-side {
+        grid-column: 3 / 4;
+      }
+      footer {
+        grid-column: 1 / 4;
+      }
+}
+  
+
 /*---------------------------------------------Ejercicio 6*/
 /*---------------------------------------------Ejercicio 7 */
 /*---------------------------------------------Ejercicio 8 */
